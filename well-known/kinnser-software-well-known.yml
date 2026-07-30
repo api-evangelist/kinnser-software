@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/* on the Kinnser host (redirects to wellsky.com)
+host: https://www.kinnser.com
+note: >-
+  www.kinnser.com 302-redirects to wellsky.com; every /.well-known/ path resolves
+  to the WellSky site and returns HTTP 404 (WellSky HTML 404 page, not a discovery
+  document). No security.txt, OIDC/OAuth authorization-server metadata, api-catalog,
+  or ai-plugin.json is published. Absence is valid, expected data for an acquired
+  brand with no independent developer surface.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
