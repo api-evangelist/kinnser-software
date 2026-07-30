@@ -1,8 +1,28 @@
 aid: kinnser-software
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kinnser-software.png
 name: Kinnser Software
-description: 'Kinnser Software is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Kinnser Software was an Austin, Texas-based provider of cloud, web-based
+  software for the post-acute care industry, serving home health, hospice, private
+  duty / personal care, and outpatient therapy agencies. Its flagship product, Kinnser
+  Agency Manager, handled clinical documentation, scheduling, billing, OASIS assessments,
+  and regulatory compliance for home-based care providers. Founded in 2003 by Chris
+  Hester, the company took growth investment from Insight Partners (Insight Venture
+  Partners) in 2012, was acquired by Mediware Information Systems in December 2016,
+  and its products were folded into WellSky after Mediware rebranded as WellSky in
+  2017. The kinnser.com domain now redirects to wellsky.com; there is no independent
+  Kinnser public developer portal or API surface. This record is a portfolio-lead
+  stub retained in the API Evangelist network for lineage and enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/kinnser-software/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +30,21 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-lifecycle: acquired
+x-acquired-by: wellsky
+x-successor-domain: https://wellsky.com/
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Home Health
+- Hospice
+- Post-Acute Care
+- Health IT
+- Electronic Health Records
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kinnser-software-domain-security.yml
 - type: Website
-  url: http://www.kinnser.com/
+  url: https://www.kinnser.com/
+- type: Successor
+  url: https://wellsky.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
